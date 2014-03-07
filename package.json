@@ -1,0 +1,33 @@
+{
+  "name": "mimosa-uncss",
+  "version": "0.1.0",
+  "homepage": "https://github.com/dbashford/mimosa-uncss",
+  "author": "David Bashford",
+  "description": "Remove unused CSS from your Mimosa apps",
+  "contributors": [
+    {
+      "name": "David Bashford",
+      "email": "dbashford@hotmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dbashford/mimosa-uncss"
+  },
+  "keywords": [
+    "mimosa",
+    "mmodule",
+    "css",
+    "optimize",
+    "remove",
+    "uncss"
+  ],
+  "dependencies": {
+    "uncss": "0.7.9"
+  },
+  "main": "./src/index",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  }
+}
