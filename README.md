@@ -19,6 +19,8 @@ This module will run the [uncss](https://github.com/giakki/uncss) against config
 
 uncss has plenty of options to tweak the optimization, like an `ignore` option in case some styles have to be forcibly retained.  Check the [uncss config](https://github.com/giakki/uncss#from-the-command-line) for more info.
 
+If the `--minify` flag is used, this module will minify the output CSS.
+
 ## Default Config
 
 This module will not do anything by default.  It must be pointed at `.html` files to process.

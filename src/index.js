@@ -1,6 +1,7 @@
 "use strict";
 
 var uncss  = require( "uncss" )
+  , clean  = require("clean-css")()
   , moduleConfig = require( "./config" );
 
 var _process = function ( mimosaConfig, options, next ) {
@@ -17,6 +18,10 @@ var _process = function ( mimosaConfig, options, next ) {
           mimosaConfig.log.error( "Error running uncss on [[ " + file.html + "]] ", error );
           done( i );
         } else {
+          if ( mimosaConfig.isMinify ) {
+            output = clean.minify( output );
+          }
+
           mimosaConfig.helpers.file.write(file.out, output, function( error ) {
             if ( error ) {
               mimosaConfig.log.error( "Error writing output file [[ " + file.out + " ]], ", error );
