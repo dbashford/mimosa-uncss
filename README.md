@@ -7,6 +7,8 @@ This is a [uncss](https://github.com/giakki/uncss) module for the Mimosa build t
 
 For more information regarding Mimosa, see http://mimosa.io
 
+This module requires Mimosa `v2.1.17`+.
+
 ## Usage
 
 Add `'uncss'` to your list of modules.  That's all!  Mimosa will install the module for you when you start `mimosa watch` or `mimosa build`.
