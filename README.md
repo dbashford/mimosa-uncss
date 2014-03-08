@@ -17,6 +17,8 @@ Add `'uncss'` to your list of modules.  That's all!  Mimosa will install the mod
 
 This module will run the [uncss](https://github.com/giakki/uncss) against configured `.html` pages and output a file that contains all of the CSS the the those pages actually use.  Any styles not used on the page are left out.
 
+uncss has plenty of options to tweak the optimization, like an `ignore` option in case some styles have to be forcibly retained.  Check the [uncss config](https://github.com/giakki/uncss#from-the-command-line) for more info.
+
 ## Default Config
 
 This module will not do anything by default.  It must be pointed at `.html` files to process.
